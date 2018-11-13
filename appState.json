@@ -31,6 +31,10 @@
           {
             "resourceName": "cweKTestSQSRule2",
             "config": {}
+          },
+          {
+            "resourceName": "cweKTestRule3",
+            "config": {}
           }
         ],
         "config": {
@@ -67,6 +71,17 @@
           "scheduleExpression": "rate(2 minutes)"
         },
         "globallyEditable": true
+      },
+      "cweKTestRule3": {
+        "name": "cweKTestRule3",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 0,
+          "name": "KTestRule3",
+          "description": "",
+          "scheduleExpression": "cron(0/1 * * * ? *)"
+        },
+        "globallyEditable": true
       }
     },
     "envVariables": [
@@ -90,7 +105,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542099321891,
+    "lastSave": 1542099411706,
     "platformRegions": {
       "AWS": "us-east-2"
     }
