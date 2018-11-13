@@ -1,0 +1,74 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "cfd7ac79-8d78-4a4c-88a1-9f8906b814d5": {
+        "id": "cfd7ac79-8d78-4a4c-88a1-9f8906b814d5",
+        "parent": null,
+        "name": "TestCommit",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "1e64992f-eb89-492c-84b2-54a0e48a610f"
+        ],
+        "isRemovable": false,
+        "filePath": "TestCommit"
+      },
+      "1e64992f-eb89-492c-84b2-54a0e48a610f": {
+        "id": "1e64992f-eb89-492c-84b2-54a0e48a610f",
+        "parent": "cfd7ac79-8d78-4a4c-88a1-9f8906b814d5",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "TestCommit/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "cfd7ac79-8d78-4a4c-88a1-9f8906b814d5",
+    "openFiles": [
+      "1e64992f-eb89-492c-84b2-54a0e48a610f"
+    ],
+    "currentFileId": "1e64992f-eb89-492c-84b2-54a0e48a610f",
+    "resources": {},
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "1e64992f-eb89-492c-84b2-54a0e48a610f"
+  },
+  "PROJECT_META": {
+    "projectName": "TestCommit",
+    "projectDescription": "github ",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "lastSave": 1542098881710,
+    "platformRegions": {
+      "AWS": "us-east-2"
+    }
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "TestCommit",
+      "url": "https://github.com/Kumudikatest/TestCommit1"
+    }
+  }
+}
