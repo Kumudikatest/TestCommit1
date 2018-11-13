@@ -23,7 +23,12 @@
         "isRemovable": true,
         "filePath": "TestCommit/lambda.js",
         "code": "exports.handler = function(event, context, callback) {\n    //blah blah\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
+        "triggers": [
+          {
+            "resourceName": "cweKTestSQSRule1",
+            "config": {}
+          }
+        ],
         "config": {
           "runtime": "nodejs8.10",
           "timeout": 60,
@@ -70,7 +75,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542099142562,
+    "lastSave": 1542099221775,
     "platformRegions": {
       "AWS": "us-east-2"
     }
