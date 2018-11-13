@@ -23,7 +23,12 @@
         "isRemovable": true,
         "filePath": "TestCommit/lambda.js",
         "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
+        "triggers": [
+          {
+            "resourceName": "cweKTestSQSRule1",
+            "config": {}
+          }
+        ],
         "config": {
           "runtime": "nodejs8.10",
           "timeout": 60,
@@ -37,7 +42,18 @@
       "1e64992f-eb89-492c-84b2-54a0e48a610f"
     ],
     "currentFileId": "1e64992f-eb89-492c-84b2-54a0e48a610f",
-    "resources": {},
+    "resources": {
+      "cweKTestSQSRule1": {
+        "name": "cweKTestSQSRule1",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 1,
+          "arn": "arn:aws:events:us-east-1:318300609668:rule/KTestSQSRule1",
+          "name": "KTestSQSRule1"
+        },
+        "globallyEditable": false
+      }
+    },
     "envVariables": [
       {
         "lambdaId": "all",
@@ -59,7 +75,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542098881710,
+    "lastSave": 1542098956762,
     "platformRegions": {
       "AWS": "us-east-2"
     }
@@ -67,7 +83,7 @@
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
-      "name": "TestCommit",
+      "name": "TestCommit1",
       "url": "https://github.com/Kumudikatest/TestCommit1"
     }
   }
